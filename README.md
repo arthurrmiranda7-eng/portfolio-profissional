@@ -116,3 +116,20 @@ As páginas internas contarão com a opção **“Voltar ao campo”**, permitin
 Os wireframes de média fidelidade foram desenvolvidos no Figma e representam a experiência de navegação, desde a entrada no estádio até as páginas internas do portfólio.
 
 🔗 [Acessar os wireframes completos no Figma](https://www.figma.com/design/9IlJrGg8YZNC6ZsIoKWAdh/LAB01---Portf%C3%B3lio-Profissional?node-id=0-1&t=a2RJud4n6gSXeI2R-1)
+
+### Algumas telas do protótipo
+
+#### Introdução — Mineirão
+![Wireframe da introdução](<frame - 01 - Intro.png>)
+
+#### Entrada do Túnel
+![Wireframe da entrada do túnel](<frame - 03 - Tunnel Entrance.png>)
+
+#### Campo — Navegação Principal
+![Wireframe do campo de navegação](<frame - 12 - Explore My Field.png>)
+
+#### Projetos
+![Wireframe da página de projetos](<frame - 14 - Projetos.png>)
+
+#### Contato
+![Wireframe da página de contato](<frame - 16 - Contato.png>)
