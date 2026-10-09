@@ -6,13 +6,16 @@
 
 ## 🚧 Status do Projeto
 
-🟡 **Em desenvolvimento — Sprint 01**
+✅ **Sprint 01 concluída — Sprint 02 em preparação**
 
 Etapa atual:
 - ✅ Planejamento da experiência
 - ✅ Wireframes de média fidelidade no Figma
 - ✅ Definição da navegação e estrutura das páginas
-- 🔄 Desenvolvimento do protótipo inicial do front-end
+- ✅ Desenvolvimento do protótipo inicial do front-end
+- ✅ Navegação entre as principais seções
+- ✅ Cabeçalho, área de conteúdo e rodapé implementados
+- ✅ Build de produção executado com sucesso
 
 ---
 
@@ -50,7 +53,7 @@ Além da navegação pelo campo, o cabeçalho contará com um menu que permitir�
 - Navegação de retorno das páginas internas para o campo principal.
 - Interface responsiva para diferentes tamanhos de tela.
 
-- ---
+---
 
 ## 🛠️ Tecnologias Previstas
 
@@ -80,13 +83,14 @@ Além da navegação pelo campo, o cabeçalho contará com um menu que permitir�
 - Git
 - GitHub
 
-- ---
+---
 
 ## 🗂️ Estrutura Inicial do Site
 
 O portfólio será organizado em uma experiência principal de navegação e quatro áreas de conteúdo.
 
 ### Experiência principal
+
 1. Introdução com o Mineirão
 2. Aproximação ao estádio
 3. Entrada no túnel
@@ -97,17 +101,40 @@ O portfólio será organizado em uma experiência principal de navegação e qua
 8. Campo interativo como menu principal
 
 ### Áreas do portfólio
+
 - **Sobre Mim**
 - **Projetos**
 - **Experiências**
 - **Contato**
 
 ### Navegação
+
 O usuário poderá navegar pelo portfólio de duas formas:
 - através dos pontos interativos presentes no campo;
-- através do menu fixo no cabeçalho.
+- através do menu presente no cabeçalho.
 
 As páginas internas contarão com a opção **“Voltar ao campo”**, permitindo retornar à interface principal de navegação.
+
+### Estrutura inicial de diretórios
+
+```text
+portfolio-profissional/
+├── README.md
+├── frame - 01 - Intro.png
+├── frame - 03 - Tunnel Entrance.png
+├── frame - 12 - Explore My Field.png
+├── frame - 14 - Projetos.png
+├── frame - 16 - Contato.png
+└── portfolio-app/
+    ├── app/
+    │   ├── globals.css
+    │   ├── layout.tsx
+    │   └── page.tsx
+    ├── public/
+    ├── package.json
+    ├── next.config.ts
+    └── tsconfig.json
+```
 
 ---
 
