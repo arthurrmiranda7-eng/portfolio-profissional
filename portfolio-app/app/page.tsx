@@ -607,37 +607,45 @@ function TunnelHorizontal({ idioma }: { idioma: Idioma }) {
         </div>
       </section>
 
-      {/* Mobile/tablet: leitura vertical normal */}
-      <section className="lg:hidden" aria-label="Trajetória pelo túnel">
+      {/* Mobile/tablet: imagens completas, sem corte */}
+      <section
+        className="bg-[#090909] lg:hidden"
+        aria-label="Trajetória pelo túnel"
+      >
         <div className="space-y-px bg-[#090909]">
-          {tunnelWallImages.map((src) => (
-            <div key={src} className="min-h-[720px]">
-              <div className="relative h-[720px] overflow-hidden">
-                <TunnelPanel backgroundImage={src} imageOnly />
-              </div>
+          {tunnelWallImages.map((src, index) => (
+            <div key={src} className="w-full bg-[#090909]">
+              <Image
+                src={src}
+                alt={`Painel do túnel ${index + 1}`}
+                width={1600}
+                height={900}
+                sizes="100vw"
+                className="block h-auto w-full object-contain"
+                priority={index === 0}
+              />
             </div>
           ))}
 
-          <div className="min-h-[720px]">
-            <div className="relative h-[720px] overflow-hidden">
-              <article className="relative h-[720px] w-full overflow-hidden bg-black">
-                <div
-                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: "url('/campo-final.png')" }}
-                  aria-hidden="true"
-                />
+          <div className="relative w-full bg-black">
+            <Image
+              src="/campo-final.png"
+              alt="Saída do túnel para o campo"
+              width={1600}
+              height={900}
+              sizes="100vw"
+              className="block h-auto w-full object-contain"
+            />
 
-                <div className="absolute inset-0 z-10 bg-black/35" aria-hidden="true" />
-                <div
-                  className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_center,transparent_25%,rgba(0,0,0,0.55)_100%)]"
-                  aria-hidden="true"
-                />
+            <div className="pointer-events-none absolute inset-0 bg-black/18" />
 
-                <div className="absolute bottom-[10%] left-[8%] z-20">
-                  <p className="text-lg font-medium text-white">THE FIELD IS AHEAD.</p>
-                  <p className="mt-3 text-[10px] tracking-[0.2em] text-white/55">CONTINUE ↓</p>
-                </div>
-              </article>
+            <div className="absolute bottom-[8%] left-[6%] z-10">
+              <p className="text-sm font-medium tracking-[0.04em] text-white sm:text-base">
+                THE FIELD IS AHEAD.
+              </p>
+              <p className="mt-2 text-[9px] tracking-[0.2em] text-white/60 sm:text-[10px]">
+                CONTINUE ↓
+              </p>
             </div>
           </div>
         </div>
